@@ -15,15 +15,8 @@ Project structure:
 From the project root:
 
 ```powershell
-# 1) Use a Python 3.11 environment (recommended)
-# Create a venv locally
-py -3.11 -m venv .venv311
-.\.venv311\Scripts\Activate.ps1
-
-# 2) Install dependencies
-python -m pip install --upgrade pip
+Install dependencies
 python -m pip install -r requirements.txt
-
 # 3) Run
 python app.py
 ```
@@ -49,15 +42,9 @@ Notes:
 - The controller clamps the cursor near screen edges and smooths deltas relative to the previous hand position.
 
 ### Troubleshooting
-- Import errors (cv2 / mediapipe not found): Ensure you are using the project venv.
-  - Activate: `.\.venv311\Scripts\Activate.ps1`
-  - Verify: `python -c "import cv2, mediapipe; print(cv2.__version__, mediapipe.__version__)"`
 - Camera not opening or black frame: Close other apps using the webcam. Try a different camera index in `app.py` (`cv2.VideoCapture(1)` etc.).
 - Window not closing: Press Esc in the OpenCV window. If needed, press Ctrl+C in terminal. The app releases the camera and closes windows on exit.
 - Sensitivity/steering: The movement uses landmark 9; adjust logic in `Controller.get_position` (`ratio`, `threshold`) to tune.
 
 ### How It Works
 `app.py` flips the frame, converts to RGB, runs MediaPipe Hands, draws landmarks, and updates global hand state used by `controller.py`. The controller computes finger-up/down states, detects composite gestures, and uses PyAutoGUI to control the OS cursor and input.
-
-### License
-Apache-2.0. See `LICENSE` if present.
