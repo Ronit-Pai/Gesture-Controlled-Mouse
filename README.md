@@ -30,36 +30,19 @@ python app.py
 
 To stop: Press Esc in the OpenCV window, or press Ctrl+C in the terminal.
 
-### Gestures and Actions
-The following mappings reflect the actual logic in `controller.py`:
+| Action              | Description                                                         | Reference                                       |
+| ------------------- | ------------------------------------------------------------------- | ----------------------------------------------- |
+| **Cursor Moving**   | Raise all fingers together and,move your hand to move the cursor and control it.| ![Cursor Moving](gestures/Mouse_moving.png)                                             |
+| **Cursor Freezing** | Thumb down, all other fingers up. Prevents mouse movement.          | ![Cursor Freezing](gestures/Mouse_freezing.png) |
+| **Drag and Drop**   | All fingers down (fist). Holds left mouse button until you release. | ![Drag](gestures/Drag.png)                      |
+| **Left Click**      | Index fingertip inside thumb area; middle, ring, little up.         | ![Left Click](gestures/Left_click.png)          |
+| **Right Click**     | Middle fingertip inside thumb area; index, ring, little up.         | ![Right Click](gestures/Right_click.png)        |
+| **Double Click**    | Ring fingertip inside thumb area; index, middle, little up.         | ![Double Click](gestures/Double_click.png)      |
+| **Scroll Up**       | Little finger up; index, middle, ring down.                         | ![Scroll Up](gestures/Scrolling_up.png)         |
+| **Scroll Down**     | Index finger up; middle, ring, little down.                         | ![Scroll Down](gestures/Scrolling_down.png)     |
+| **Zoom Out**        | Index + middle up, ring + little down, fingers close together.      | ![Zoom Out](gestures/Zooming_out.png)           |
+| **Zoom In**         | Index + middle up, ring + little down, fingers apart.               | ![Zoom In](gestures/Zooming_in.png)             |
 
-- Cursor moving: Default behavior. The cursor follows landmark 9 unless frozen.
-- Cursor freezing: Thumb down while all other fingers up. Prevents mouse movement.
-  - Reference: `gestures/Mouse_freezing.png`
-
-- Drag and drop: All fingers down (fist). Holds left mouse button until you release the fist.
-  - Reference: `gestures/Drag.png`
-
-- Left click: Index finger tip inside the thumb area; middle, ring, little are up; no other finger inside thumb.
-  - Reference: `gestures/Left_click.png`
-
-- Right click: Middle finger tip inside the thumb area; index, ring, little are up; no other finger inside thumb.
-  - Reference: `gestures/Right_click.png`
-
-- Double click: Ring finger tip inside the thumb area; index, middle, little are up; no other finger inside thumb.
-  - Reference: `gestures/Double_click.png`
-
-- Scroll up: Little finger up; index, middle, ring down.
-  - Reference: `gestures/Scrolling_up.png`
-
-- Scroll down: Index finger up; middle, ring, little down.
-  - Reference: `gestures/Scrolling_down.png`
-
-- Zoom: Index and middle up; ring and little down. Zoom direction depends on horizontal spacing:
-  - Zoom out: Index and middle are close together (within a small x-distance window).
-    - Reference: `gestures/Zooming_out.png`
-  - Zoom in: Index and middle are apart (outside that window).
-    - Reference: `gestures/Zooming_in.png`
 
 Notes:
 - Landmark indices follow MediaPipe Hands (e.g., 4 = thumb tip, 8 = index tip, 12 = middle tip, 16 = ring tip, 20 = little tip).
