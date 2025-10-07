@@ -16,7 +16,7 @@ From the project root:
 
 ```powershell
 # 1) Use a Python 3.11 environment (recommended)
-# Create a venv locally but DO NOT commit it to Git (see .gitignore)
+# Create a venv locally
 py -3.11 -m venv .venv311
 .\.venv311\Scripts\Activate.ps1
 
