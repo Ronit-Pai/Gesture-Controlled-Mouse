@@ -37,6 +37,9 @@ To stop: Press Esc in the OpenCV window, or press Ctrl+C in the terminal.
 | **Zoom Out**        | Index + middle up, ring + little down, fingers close together.      | ![Zoom Out](gestures/Zooming_out.png)           |
 | **Zoom In**         | Index + middle up, ring + little down, fingers apart.               | ![Zoom In](gestures/Zooming_in.png)             |
 
+### Demo Video
+[![Watch the video](https://img.youtube.com/vi/6DuZOCQaoJs/0.jpg)](https://youtu.be/6DuZOCQaoJs)  
+*(Note: The video is raw and unedited — sorry about that! I didn’t have time for editing. Please refer to the table and the video for better understanding.)*
 
 
 
