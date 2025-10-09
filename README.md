@@ -20,8 +20,9 @@ python -m pip install -r requirements.txt
 # 3) Run
 python app.py
 ```
-
 To stop: Press Esc in the OpenCV window, or press Ctrl+C in the terminal.
+### Fingers
+<img src="finger%20names.png" alt="Fingers" width="300">
 
 | Action              | Description                                                         | Reference                                       |
 | ------------------- | ------------------------------------------------------------------- | ----------------------------------------------- |
