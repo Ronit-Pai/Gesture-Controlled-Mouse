@@ -37,6 +37,9 @@ To stop: Press Esc in the OpenCV window, or press Ctrl+C in the terminal.
 | **Zoom Out**        | Index + middle up, ring + little down, fingers close together.      | ![Zoom Out](gestures/Zooming_out.png)           |
 | **Zoom In**         | Index + middle up, ring + little down, fingers apart.               | ![Zoom In](gestures/Zooming_in.png)             |
 
+### Demo Video
+[![Watch the video](https://img.youtube.com/vi/6DuZOCQaoJs/0.jpg)](https://youtu.be/6DuZOCQaoJs)
+
 
 Notes:
 - Landmark indices follow MediaPipe Hands (e.g., 4 = thumb tip, 8 = index tip, 12 = middle tip, 16 = ring tip, 20 = little tip).
